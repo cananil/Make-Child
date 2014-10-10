@@ -24,7 +24,7 @@ $footer_credit = apply_filters( 'make_show_footer_credit', true );
 <?php if ( true === $footer_credit ) : ?>
 <div class="site-info">
 	<span class="theme-name">Design by web design POP, Ltd. Co.</span>
-	<span class="theme-by"><?php _ex( 'by', 'attribution', 'make' ); ?></span>
+	<span class="theme-by"><?php _ex( '•','attribution', 'make' ); ?></span>
 	<span class="theme-author">
 		<a title="Michael Musgrove <?php esc_attr_e( 'homepage', 'make' ); ?>" href="https://michaelmusgrove.com/">
 			Michael Musgrove

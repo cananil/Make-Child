@@ -16,9 +16,27 @@
  */
 
 @import url( '../make/style.css' );
+/*
+Change menu text color*/
+.site-header, .site-header a, .site-navigation .menu li a {
+color: #eee;
+}
 
 /* Add your custom styles below. */
 .iconic{
+  color: red;
   height: 2em;
   width: 2em;
+}
+
+a.author-social {
+margin: 0 0 0 1em;
+}
+
+.author-social:hover .fa-facebook {color: #3b5998;}
+.author-social:hover .fa-twitter {color: #00aced;}
+.author-social:hover .fa-google-plus {color: #dd4b39;}
+.buttonred{
+  color: white;
+  background-color: #860D0D!important;
 }

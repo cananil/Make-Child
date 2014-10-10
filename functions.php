@@ -1,17 +1,17 @@
 <?php
 /**
- * @package Make Child
+ * @package make_child
  *
- * Add your custom functions here.
+ * Add custom functions here.
  */
-
-function theme_name_scripts() {
-  wp_enqueue_style( 'style-name', get_stylesheet_uri() );
-  wp_enqueue_script( 'script-name', get_template_directory_uri() . 'wp-content/themes/make child/js/iconic.min.js', array(), '1.0.0', true );
+//Add Scripts n Styles
+add_action( 'wp_enqueue_scripts', 'load_my_styles' );
+function load_my_styles() {
+    wp_enqueue_style( 'parent-theme', get_stylesheet_directory_uri() . '/css/red-duotone.css' );
 }
 
-add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
-
-
-
-
+add_action( 'wp_enqueue_scripts', 'load_my_scripts' );
+function load_my_scripts() {
+    wp_enqueue_script( 'parent-theme', get_stylesheet_directory_uri() . '/js/iconic.min.js' );
+    wp_enqueue_script( 'parent-theme', get_stylesheet_directory_uri() . '/js/dropcap.js' );
+  }

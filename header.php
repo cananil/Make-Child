@@ -9,13 +9,12 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+           <!--   <script src="iconic.min.js"></script> -->
 
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
 
 		<?php wp_head(); ?>
-            <script src="js/iconic.min.js"></script>
-            <style src="css/red-duotone.css"></style>
-	</head>
+        </head>
 
 	<body <?php body_class(); ?>>
 		<div id="site-wrapper" class="site-wrapper">
